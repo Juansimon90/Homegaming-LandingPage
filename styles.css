@@ -1,3 +1,5 @@
+/* CSS para Homegaming Landing Page */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #1d1f27;
     color: #f0f0f0;
+    line-height: 1.6;
 }
 
 header {
@@ -37,6 +40,11 @@ nav ul li a {
     color: #f0f0f0;
     text-decoration: none;
     font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6c5ce7;
 }
 
 .hero-section {
@@ -129,6 +137,36 @@ nav ul li a {
     border-radius: 5px;
     font-size: 1.2rem;
     cursor: pointer;
+}
+
+.segments-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4rem 0;
+    background-color: #2e3241;
+}
+
+.segment {
+    background-color: #3a3d4d;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    margin: 1rem;
+    transition: transform 0.3s;
+}
+
+.segment:hover {
+    transform: scale(1.05);
+}
+
+.segment img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
 }
 
 footer {
