@@ -2,53 +2,56 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Homegaming en el Metaverso</title>
-    <meta name="description" content="Descubre Homegaming, la plataforma que revolucionará tu experiencia de juego en el metaverso. Únete a nuestro Marketplace Virtual, participa en eventos exclusivos y conecta con jugadores y creadores de contenido de todo el mundo.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Enlace al archivo CSS -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homegaming - Metaverso</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Homegaming en el Metaverso</h1>
-        <p>¡Revoluciona tu experiencia de juego!</p>
+        <div class="container">
+            <h1>Homegaming</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#marketplace">Marketplace</a></li>
+                    <li><a href="#eventos">Eventos Exclusivos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section class="intro">
-            <h2>Bienvenido a la nueva era del gaming</h2>
-            <p>
-                Homegaming es la plataforma que te sumerge en un mundo virtual donde puedes interactuar con otros jugadores y creadores de contenido, participar en eventos exclusivos y acceder a nuestro innovador Marketplace Virtual.
-            </p>
-        </section>
-        <section class="features">
-            <h2>Características Principales</h2>
-            <div class="feature">
-                <h3>Marketplace Virtual</h3>
-                <p>Compra y vende ítems exclusivos y personaliza tu experiencia en el metaverso.</p>
-            </div>
-            <div class="feature">
-                <h3>Eventos Exclusivos</h3>
-                <p>Participa en torneos, lanzamientos y eventos únicos para nuestra comunidad.</p>
-            </div>
-            <div class="feature">
-                <h3>Interacción en Tiempo Real</h3>
-                <p>Conecta y colabora con jugadores y creadores de contenido de todo el mundo.</p>
-            </div>
-        </section>
-        <section class="mockup">
-            <!-- Imagen o maqueta representativa de la plataforma -->
-            <img src="imagenes/mockup-plataforma.jpg" alt="Maqueta de Homegaming en el Metaverso">
-        </section>
-        <section class="cta">
-            <h2>¡Sé parte de la revolución!</h2>
-            <p>Estamos en fase de desarrollo y queremos que seas de los primeros en unirte. Deja tu correo electrónico para recibir actualizaciones y acceso anticipado.</p>
-            <form name="contacto" method="POST" data-netlify="true">
-                <input type="hidden" name="form-name" value="contacto">
-                <input type="email" name="email" placeholder="Ingresa tu correo electrónico" required>
-                <button type="submit">¡Quiero unirme!</button>
-            </form>
-        </section>
-    </main>
+
+    <section id="home" class="hero-section">
+        <div class="hero-text">
+            <h2>Una Nueva Experiencia en el Metaverso</h2>
+            <p>Explora nuestro <strong>Marketplace Virtual</strong>, disfruta de <strong>Eventos Exclusivos</strong> y conecta con jugadores y creadores de contenido en el metaverso.</p>
+            <a href="#contacto" class="cta-btn">Regístrate para obtener más información</a>
+        </div>
+        <div class="hero-image">
+            <img src="A_futuristic_landing_page_for_a_platform_called_Ho.png" alt="Homegaming Metaverso">
+        </div>
+    </section>
+
+    <section id="marketplace" class="section">
+        <h2>Marketplace Virtual</h2>
+        <p>Compra, vende e intercambia activos digitales en nuestro marketplace del metaverso. Explora objetos únicos y exclusivos.</p>
+    </section>
+
+    <section id="eventos" class="section">
+        <h2>Eventos Exclusivos</h2>
+        <p>Accede a torneos, lanzamientos y contenido especial mediante suscripciones. ¡Sé parte de las experiencias más inmersivas del metaverso!</p>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <h2>Suscríbete para actualizaciones</h2>
+        <p>Estamos en fase de desarrollo, pero puedes ser el primero en saber cuando lancemos la plataforma. Deja tu correo electrónico para obtener acceso prioritario y actualizaciones.</p>
+        <form action="https://formspree.io/f/your-email" method="POST">
+            <input type="email" name="email" placeholder="Introduce tu correo" required>
+            <button type="submit" class="cta-btn">Suscribirse</button>
+        </form>
+    </section>
+
     <footer>
         <p>&copy; 2024 Homegaming. Todos los derechos reservados.</p>
     </footer>
