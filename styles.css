@@ -1,0 +1,121 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
+}
+
+h1, h2, h3 {
+    color: #ff6f00;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+}
+
+header {
+    background-image: url('imagenes/fondo-header.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+.intro, .features, .cta {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature {
+    flex: 1 1 250px;
+    margin: 20px;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.mockup img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 50px auto;
+    border: 2px solid #ff6f00;
+    border-radius: 10px;
+}
+
+.cta form {
+    margin-top: 20px;
+}
+
+.cta input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    max-width: 100%;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.cta button {
+    padding: 10px 20px;
+    background-color: #ff6f00;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta button:hover {
+    background-color: #e65c00;
+}
+
+footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666666;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+}
