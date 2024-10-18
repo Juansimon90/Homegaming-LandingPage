@@ -197,3 +197,34 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* Segmentos (Gamers, Influencers, Empresas) */
+.segments-section {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos horizontalmente */
+    align-items: center;
+    flex-wrap: wrap; /* Esto permite que los elementos se ajusten en pantallas pequeñas */
+    padding: 4rem 0;
+    background-color: #2e3241;
+}
+
+.segment {
+    background-color: #3a3d4d;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 30%; /* Ajusta el ancho de cada segmento para que quepan en una línea */
+    text-align: center;
+    margin: 1rem;
+    transition: transform 0.3s;
+}
+
+.segment:hover {
+    transform: scale(1.05);
+}
+
+.segment img {
+    width: 100%;
+    max-width: 150px; /* Ajusta el tamaño de las imágenes dentro de los segmentos */
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
