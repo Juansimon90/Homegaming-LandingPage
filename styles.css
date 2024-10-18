@@ -169,4 +169,31 @@ nav ul li a:hover {
     background-color: #3a3d4d;
     padding: 2rem;
     border-radius: 10px;
-    width: 30
+    width: 30%;
+    text-align: center;
+    margin: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: scale(1.05);
+}
+
+.benefit-card img {
+    width: 100%;
+    max-width: 100px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #13141a;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+footer p {
+    margin: 0;
+}
