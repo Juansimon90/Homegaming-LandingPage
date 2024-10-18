@@ -54,8 +54,26 @@
 
     <section id="contacto" class="contact-section">
         <h2>¡Sé de los primeros en acceder a contenido exclusivo del metaverso!</h2>
-        <form action="https://formspree.io/f/your-email" method="POST">
-            <input type="email" name="email" placeholder="Introduce tu correo" required>
+        <form action="https://formspree.io/f/xeoqqbzp" method="POST">
+            
+
+            
+                    <!-- Campo para Nombre -->
+        <input type="text" name="nombre" placeholder="Introduce tu nombre" required>
+        
+        <!-- Campo para Correo -->
+        <input type="email" name="email" placeholder="Introduce tu correo" required>
+        
+        <!-- Menú desplegable para Interés -->
+        <label for="interes">Selecciona tu interés:</label>
+        <select name="interes" id="interes" required>
+            <option value="" disabled selected>Elige una opción</option>
+            <option value="Gamers">Gamers</option>
+            <option value="Influencers y Creadores de Contenido">Influencers y Creadores de Contenido</option>
+            <option value="Empresas">Empresas</option>
+        </select>
+            
+            
             <button type="submit" class="cta-btn">¡No pierdas la oportunidad! Regístrate ahora</button>
         </form>
     </section>
