@@ -118,19 +118,39 @@ nav ul li a:hover {
 }
 
 .contact-section form {
-    display: inline-block;
+    display: flex;               /* Cambia a flexbox */
+    flex-direction: column;       /* Ordena los elementos en columna */
+    align-items: center;          /* Centra los elementos en la columna */
     margin-top: 2rem;
 }
 
-.contact-section input {
+.contact-section input, .contact-section select {
     padding: 1rem;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
-    margin-right: 1rem;
-    width: 300px;
+    margin-bottom: 1rem;          /* Crea espacio vertical entre los campos */
+    width: 300px;                 /* Establece un ancho uniforme */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
+
+.contact-section button {
+    padding: 1rem 2rem;
+    background-color: #6c5ce7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;            /* Añade espacio superior para separar el botón */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #4e41b6;
+    transform: scale(1.05);
+}
+
 
 .contact-section input:focus {
     outline: none;
