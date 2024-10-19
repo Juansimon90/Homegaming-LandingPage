@@ -249,3 +249,44 @@ footer p {
     margin-bottom: 1rem;
     border-radius: 10px;
 }
+
+/* Media query para pantallas de hasta 768px (típicos dispositivos móviles) */
+@media (max-width: 768px) {
+
+    /* Ajusta el contenedor */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Texto en la sección hero */
+    .hero-text {
+        max-width: 90%; /* Reduce el ancho para pantallas pequeñas */
+        margin-left: 0; /* Centra el texto en dispositivos móviles */
+    }
+
+    /* Tamaño del título y párrafo */
+    .hero-text h2 {
+        font-size: 2rem; /* Reduce el tamaño del título */
+    }
+
+    .hero-text p {
+        font-size: 1.2rem; /* Reduce el tamaño del párrafo */
+    }
+
+    /* Imagen en la sección hero */
+    .hero-image img {
+        max-width: 90%; /* Asegúrate de que la imagen no sea más grande que la pantalla */
+    }
+
+    /* Ajusta el formulario */
+    .contact-section input, .contact-section select {
+        width: 100%; /* Haz que los campos del formulario ocupen todo el ancho en móviles */
+    }
+
+    /* Tarjetas en las secciones */
+    .benefit-card, .segment {
+        width: 100%; /* Asegura que las tarjetas ocupen el ancho completo en móviles */
+        margin: 1rem 0; /* Añade espacio entre las tarjetas */
+    }
+}
