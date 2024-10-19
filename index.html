@@ -24,13 +24,14 @@
     </header>
 
     <section id="home" class="hero-section">
+        <!-- Mover la imagen aquí, arriba del texto -->
+        <div class="hero-image">
+            <img src="Homegaming.webp" alt="Homegaming Metaverso">
+        </div>
         <div class="hero-text" style="margin-right: 2rem;">
             <h2>Plataforma Integral en el Metaverso</h2>
             <p>Homegaming ofrece un espacio digital donde los usuarios pueden interactuar, competir, aprender y comerciar en un entorno inmersivo. Disfruta de nuestro <strong>Marketplace Virtual</strong>, suscríbete a <strong>Eventos Exclusivos</strong> y conecta con otros jugadores y creadores de contenido.</p>
             <a href="#contacto" class="cta-btn">¡Sé de los primeros en acceder a contenido exclusivo del metaverso! Regístrate ahora para no perderte nada</a>
-        </div>
-        <div class="hero-image">
-            <img src="Homegaming.webp" alt="Homegaming Metaverso">
         </div>
     </section>
 
@@ -55,24 +56,20 @@
     <section id="contacto" class="contact-section">
         <h2>¡Sé de los primeros en acceder a contenido exclusivo del metaverso!</h2>
         <form action="https://formspree.io/f/xeoqqbzp" method="POST">
+            <!-- Campo para Nombre -->
+            <input type="text" name="nombre" placeholder="Introduce tu nombre" required>
             
-
+            <!-- Campo para Correo -->
+            <input type="email" name="email" placeholder="Introduce tu correo" required>
             
-                    <!-- Campo para Nombre -->
-        <input type="text" name="nombre" placeholder="Introduce tu nombre" required>
-        
-        <!-- Campo para Correo -->
-        <input type="email" name="email" placeholder="Introduce tu correo" required>
-        
-        <!-- Menú desplegable para Interés -->
-        <label for="interes">Selecciona tu interés:</label>
-        <select name="interes" id="interes" required>
-            <option value="" disabled selected>Elige una opción</option>
-            <option value="Gamers">Gamers</option>
-            <option value="Influencers y Creadores de Contenido">Influencers y Creadores de Contenido</option>
-            <option value="Empresas">Empresas</option>
-        </select>
-            
+            <!-- Menú desplegable para Interés -->
+            <label for="interes">Selecciona tu interés:</label>
+            <select name="interes" id="interes" required>
+                <option value="" disabled selected>Elige una opción</option>
+                <option value="Gamers">Gamers</option>
+                <option value="Influencers y Creadores de Contenido">Influencers y Creadores de Contenido</option>
+                <option value="Empresas">Empresas</option>
+            </select>
             
             <button type="submit" class="cta-btn">¡No pierdas la oportunidad! Regístrate ahora</button>
         </form>
@@ -102,7 +99,6 @@
     </section>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 
     <footer>
         <p>&copy; 2024 Homegaming. Todos los derechos reservados.</p>
