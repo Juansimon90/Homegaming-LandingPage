@@ -10,7 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #1d1f27, #2e3241);
     color: #f0f0f0;
-    line-height: 1.7; /* Mejora la legibilidad del texto */
+    line-height: 1.7;
 }
 
 header {
@@ -47,18 +47,21 @@ nav ul li a:hover {
     color: #6c5ce7;
 }
 
+/* Ajuste de la sección hero para dispositivos grandes */
 .hero-section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 4rem 0;
     background-color: #2e3241;
     min-height: 90vh;
+    text-align: center;
 }
 
 .hero-text {
-    max-width: 50%;
-    margin-left: 2rem;
+    max-width: 80%;
+    margin-top: 2rem;
 }
 
 .hero-text h2 {
@@ -93,6 +96,7 @@ nav ul li a:hover {
     width: 100%;
     max-width: 600px;
     border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
 .section {
@@ -118,9 +122,9 @@ nav ul li a:hover {
 }
 
 .contact-section form {
-    display: flex;               /* Cambia a flexbox */
-    flex-direction: column;       /* Ordena los elementos en columna */
-    align-items: center;          /* Centra los elementos en la columna */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 2rem;
 }
 
@@ -129,8 +133,8 @@ nav ul li a:hover {
     font-size: 1rem;
     border: none;
     border-radius: 5px;
-    margin-bottom: 1rem;          /* Crea espacio vertical entre los campos */
-    width: 300px;                 /* Establece un ancho uniforme */
+    margin-bottom: 1rem;
+    width: 300px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -142,7 +146,7 @@ nav ul li a:hover {
     border-radius: 5px;
     font-size: 1.2rem;
     cursor: pointer;
-    margin-top: 1rem;            /* Añade espacio superior para separar el botón */
+    margin-top: 1rem;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -151,26 +155,9 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-
-.contact-section input:focus {
+.contact-section input:focus, .contact-section select:focus {
     outline: none;
     box-shadow: 0 4px 12px rgba(108, 92, 231, 0.5);
-}
-
-.contact-section button {
-    padding: 1rem 2rem;
-    background-color: #6c5ce7;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.contact-section button:hover {
-    background-color: #4e41b6;
-    transform: scale(1.05);
 }
 
 .marketplace-section {
@@ -222,9 +209,9 @@ footer p {
 /* Segmentos (Gamers, Influencers, Empresas) */
 .segments-section {
     display: flex;
-    justify-content: space-around; /* Distribuye los elementos horizontalmente */
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap; /* Esto permite que los elementos se ajusten en pantallas pequeñas */
+    flex-wrap: wrap;
     padding: 4rem 0;
     background-color: #2e3241;
 }
@@ -233,7 +220,7 @@ footer p {
     background-color: #3a3d4d;
     padding: 2rem;
     border-radius: 10px;
-    width: 30%; /* Ajusta el ancho de cada segmento para que quepan en una línea */
+    width: 30%;
     text-align: center;
     margin: 1rem;
     transition: transform 0.3s;
@@ -245,7 +232,7 @@ footer p {
 
 .segment img {
     width: 100%;
-    max-width: 150px; /* Ajusta el tamaño de las imágenes dentro de los segmentos */
+    max-width: 150px;
     margin-bottom: 1rem;
     border-radius: 10px;
 }
@@ -261,32 +248,33 @@ footer p {
 
     /* Texto en la sección hero */
     .hero-text {
-        max-width: 90%; /* Reduce el ancho para pantallas pequeñas */
-        margin-left: 0; /* Centra el texto en dispositivos móviles */
+        max-width: 90%;
+        margin-left: 0;
+        text-align: center;
     }
 
     /* Tamaño del título y párrafo */
     .hero-text h2 {
-        font-size: 2rem; /* Reduce el tamaño del título */
+        font-size: 2rem;
     }
 
     .hero-text p {
-        font-size: 1.2rem; /* Reduce el tamaño del párrafo */
+        font-size: 1.2rem;
     }
 
     /* Imagen en la sección hero */
     .hero-image img {
-        max-width: 90%; /* Asegúrate de que la imagen no sea más grande que la pantalla */
+        max-width: 90%;
     }
 
     /* Ajusta el formulario */
     .contact-section input, .contact-section select {
-        width: 100%; /* Haz que los campos del formulario ocupen todo el ancho en móviles */
+        width: 100%;
     }
 
     /* Tarjetas en las secciones */
     .benefit-card, .segment {
-        width: 100%; /* Asegura que las tarjetas ocupen el ancho completo en móviles */
-        margin: 1rem 0; /* Añade espacio entre las tarjetas */
+        width: 100%;
+        margin: 1rem 0;
     }
 }
